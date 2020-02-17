@@ -37,5 +37,3 @@ fields:
   default: "/content/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
 pages:
 - content/posts/first-post.md
-- content/posts/second-post.md
-- content/posts/third-post.md
