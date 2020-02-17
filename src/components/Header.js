@@ -14,23 +14,87 @@ export default function Header(props) {
         aria-label="main navigation"
       >
         <Link to="/">
-          <h1>{props.title}</h1>
+          <h1>Reynardt Deminey</h1>
         </Link>
         <div>
+        <h1>
+          <Link
+              to={
+                props.page === 'about'
+                  ? "/"
+                  : "/about"
+              }
+              activeClassName={headerStyles.navItemActive}
+            >
+              {props.page === 'about'
+                ? "close"
+                : "about"}
+            </Link>
+          </h1>
           <h1>
+         <Link
+              to={
+                props.page === 'resume'
+                  ? "/"
+                  : "/resume"
+              }
+              activeClassName={headerStyles.navItemActive}
+            >
+              {props.page === 'resume'
+                ? "close"
+                : "resume"}
+            </Link>
+            
+          </h1>
+          <h1>
+         <Link
+              to={
+                props.page === 'projects'
+                  ? "/"
+                  : "/projects"
+              }
+              activeClassName={headerStyles.navItemActive}
+            >
+              {props.page === 'projects'
+                ? "close"
+                : "projects"}
+            </Link>
+            
+          </h1>
+        <h1>
+        <Link
+              to={
+                props.page === 'contact'
+                  ? "/"
+                  : "/contact"
+              }
+              activeClassName={headerStyles.navItemActive}
+            >
+              {props.page === 'contact'
+                ? "close"
+                : "contact"}
+            </Link>
+            
+          </h1>
+          <h1>
+            <a href="https://react30-30.netlify.com/">#React3030</a>            
+          </h1>
+         
+          
+          {/* <h1>
             <Link
               to={
                 props.page === 'info'
                   ? "/"
                   : "/info"
               }
-              activeClassName={headerStyles.navItemActive}
+              // activeClassName={headerStyles.navItemActive}
             >
               {props.page === 'info'
                 ? "close"
                 : "info"}
             </Link>
-          </h1>
+          </h1> */}
         </div>
       </nav>
     </header>
