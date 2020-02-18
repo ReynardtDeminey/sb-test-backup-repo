@@ -1,0 +1,28 @@
+.about-section {
+    margin: 0px 40px 40px 40px;
+    text-align: justify;
+}
+
+.header {
+    text-align: center;
+}
+
+.profile-picture-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-picture {
+    width: 300px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.sub-heading {
+    text-align: center;
+    font-size: 23px;
+}
+
+.blurb {
+    margin: 10px 60px 10px 60px;
+}
