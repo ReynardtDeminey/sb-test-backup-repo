@@ -77,7 +77,7 @@ export default function Header(props) {
             
           </h1>
           <h1>
-            <a href="https://react30-30.netlify.com/">#React3030</a>            
+            <a href="https://coding30-30.netlify.com/">#Coding3030</a>            
           </h1>
          
           
