@@ -1,0 +1,9 @@
+.project-container {
+    border-bottom: 1px solid grey;
+    
+}
+
+.project-image-container {
+    display: inline;
+    float: left;
+}

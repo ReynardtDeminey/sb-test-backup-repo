@@ -6,7 +6,7 @@ import useSiteMetaData from "../static_queries/useSiteMetadata"
 export default function Resume() {
   const { infoData } = useSiteMetaData()
   return (
-    <Layout page="resume" bgColor={infoData.background_color}>
+    <Layout page="resume" bgColor="#c7d1d9">
       <section className={infoStyles.info_blurb}>
         <h2>
           <div dangerouslySetInnerHTML={{__html: "infoData.description"}}></div>
