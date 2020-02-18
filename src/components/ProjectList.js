@@ -4,6 +4,7 @@ import useBlogData from "../static_queries/useBlogData"
 import blogListStyles from "../styles/components/bloglist.module.scss"
 import Img from 'gatsby-image'
 
+
 export default function BlogList(props) {
   const blogData = useBlogData()
   function renderBlogData() {
@@ -14,6 +15,14 @@ export default function BlogList(props) {
           .map(blog => {
             return (              
                 <li className={blogListStyles.li}>
+                  <div className={blogListStyles.list__hero}>
+                    <img 
+                      src={
+                        props.src
+                      }
+                      alt={blog.node.frontmatter.title}
+                    />
+                    </div>
                   <div className={blogListStyles.list__info}>
                     <h2>{props.name}</h2>
                     <p>{props.description}</p>
