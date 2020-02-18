@@ -15,11 +15,12 @@
   }
   .list__hero {
     width: 100%;
+    padding: 25px;
     height: 33vh;
     overflow: hidden;
     background-color: #000;
     img {
-      object-fit: cover;
+      object-fit: contain;
       object-position: 50% 50%;
       min-height: 100%;
     }

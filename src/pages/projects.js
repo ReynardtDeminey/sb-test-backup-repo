@@ -3,14 +3,14 @@ import Layout from "../components/Layout"
 // import infoStyles from "../styles/pages/info.module.scss"
 // import useSiteMetaData from "../static_queries/useSiteMetadata"
 import ProjectList from "../components/ProjectList"
-import image1 from "../images/image1.jpg"
+import reddit from "../images/reddit.png"
 
 export default function Projects(props) {
   
   return (
     <Layout page="projects" bgColor="#c7d1d9">
       <section>
-        <ProjectList name="Reddit Search Engine" description="A search engine built on the the pushshift API" src={image1}/>
+        <ProjectList name="Reddit Search Engine" description="A search engine built on the the pushshift API" src={reddit}/>
         
       </section>
     </Layout>

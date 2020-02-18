@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import useBlogData from "../static_queries/useBlogData"
 import blogListStyles from "../styles/components/bloglist.module.scss"
-import Img from 'gatsby-image'
+
 
 
 export default function BlogList(props) {
@@ -15,12 +14,12 @@ export default function BlogList(props) {
           .map(blog => {
             return (              
                 <li className={blogListStyles.li}>
-                  <div className={blogListStyles.list__hero}>
+                  <div className={blogListStyles.list__hero} id="imgdiv">
                     <img 
                       src={
                         props.src
                       }
-                      alt={blog.node.frontmatter.title}
+                      alt={blog.node.frontmatter.title}                      
                     />
                     </div>
                   <div className={blogListStyles.list__info}>
