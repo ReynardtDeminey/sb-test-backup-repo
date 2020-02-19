@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout"
-import infoStyles from "../styles/pages/info.module.scss"
-import useSiteMetaData from "../static_queries/useSiteMetadata"
 import "./resume.css"
+import python from "../images/python.png"
+import html5 from "../images/html5.png"
+import css from "../images/css.png"
+import react from "../images/react.png"
+import javascript from "../images/javascript.png"
 
 export default function Resume() {
-  const { infoData } = useSiteMetaData()
   return (
     <Layout page="resume" bgColor="#c7d1d9">
       <section className="resume-section">
@@ -36,7 +38,14 @@ export default function Resume() {
       <div>
         <h2>Skills</h2>
         <h3>Programming Languages &amp; Tools</h3>
-        <p><i className="fab fa-python resume-icons"></i> <i className="fab fa-html5 resume-icons"></i><i className="fab fa-css3-alt resume-icons"></i> <i className="fab fa-bootstrap resume-icons"></i> <i className="fab fa-js-square resume-icons"></i><i className="fab fa-vuejs resume-icons"></i> <i className="fab fa-npm resume-icons"></i></p>
+        <p>
+          <img className="resume-icons" src={python} alt="" />
+          <img className="resume-icons" src={html5} alt="" />
+          <img className="resume-icons" src={css} alt="" />
+          <img className="resume-icons" src={javascript} alt="" />
+          <img className="resume-icons" src={react} alt="" />
+          <img/>
+        </p>
         <h3>Specific skills</h3>
         <p><i className="fa-li fa fa-check"></i> Responsive Design with HTML, CSS, Javascript and Bootstrap</p>
         <p><i className="fa-li fa fa-check"></i>  Development with Python including web development with Flask, Web API's and scraping</p>

@@ -1,16 +1,14 @@
 import React from "react"
 import Layout from "../components/Layout"
 import "./about.css" 
-import useSiteMetaData from "../static_queries/useSiteMetadata"
 import Profilephoto2 from "../images/Profilephoto2.jpg"
 
 export default function About() {
-  const { infoData } = useSiteMetaData()
-  return (
+ return (
     <Layout page="about" bgColor="#c7d1d9">
       <section className="about-section">
       <div>
-        <div className="profile-picture-container"><img className="profile-picture" src={Profilephoto2}/></div>
+        <div className="profile-picture-container"><img className="profile-picture" src={Profilephoto2} alt=""/></div>
         <h1 className="header">Reynardt Deminey</h1>
         <div className="sub-heading">Midstream Estate · Gauteng · South Africa · <a href="mailto:demineydev@outlook.com">demineydev@outlook.com</a></div>
         <br/>

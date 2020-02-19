@@ -14,16 +14,19 @@ export default function BlogList(props) {
           .map(blog => {
             return (              
                 <li className={blogListStyles.li}>
-                  <div className={blogListStyles.list__hero} id="imgdiv">
+                  <div className={blogListStyles.list__hero}>
+                    <a href={props.url}>
                     <img 
+                      className="project-image"
                       src={
                         props.src
                       }
                       alt={blog.node.frontmatter.title}                      
                     />
+                    </a>
                     </div>
                   <div className={blogListStyles.list__info}>
-                    <h2>{props.name}</h2>
+                    <h2><a href={props.url}>{props.name}</a></h2>
                     <p>{props.description}</p>
                   </div>
                 </li>              

@@ -1,11 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
-import infoStyles from "../styles/pages/info.module.scss"
-import useSiteMetaData from "../static_queries/useSiteMetadata"
 import "./contact.css"
+import github from "../images/github.png"
+import twitter from "../images/twitter.png"
+import linkedin from "../images/linkedin.png"
+import mail from "../images/mail.png"
 
 export default function Contact() {
-  const { infoData } = useSiteMetaData()
   return (
     <Layout page="contact" bgColor="#c7d1d9">
       <br/>
@@ -14,10 +15,10 @@ export default function Contact() {
       <div className="contact-container">
         <p>
           
-          <a href="https://github.com/ReynardtDeminey"><i className="fab fa-github social-links"></i></a>
-          <a href="https://twitter.com/ReynardtDeminey"><i className="fab fa-twitter social-links"></i></a>
-          <a href="https://www.linkedin.com/in/reynardt-deminey-15016789/"><i className="fab fa-linkedin-in social-links"></i></a>
-          <a href="mailto:demineydev@outlook.com"><i className="fas fa-envelope-square social-links"></i></a>
+          <a href="https://github.com/ReynardtDeminey"><img className="social-links" src={github} alt="" /></a>
+          <a href="https://twitter.com/ReynardtDeminey"><img className="social-links" src={twitter} alt="" /></a>
+          <a href="https://www.linkedin.com/in/reynardt-deminey-15016789/"><img className="social-links" src={linkedin} alt="" /></a>
+          <a href="mailto:demineydev@outlook.com"><img className="social-links" src={mail} alt="" /></a>
           </p>
       </div>
     </Layout>
