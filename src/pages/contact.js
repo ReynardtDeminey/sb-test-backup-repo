@@ -18,7 +18,7 @@ export default function Contact() {
           <a href="https://github.com/ReynardtDeminey"><img className="social-links" src={github} alt="" /></a>
           <a href="https://twitter.com/ReynardtDeminey"><img className="social-links" src={twitter} alt="" /></a>
           <a href="https://www.linkedin.com/in/reynardt-deminey-15016789/"><img className="social-links" src={linkedin} alt="" /></a>
-          <a href="mailto:demineydev@outlook.com"><img className="social-links" src={mail} alt="" /></a>
+          <a href="mailto:info@reynardtdeminey.me"><img className="social-links" src={mail} alt="" /></a>
           </p>
       </div>
     </Layout>
