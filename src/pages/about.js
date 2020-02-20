@@ -10,7 +10,7 @@ export default function About() {
       <div>
         <div className="profile-picture-container"><img className="profile-picture" src={Profilephoto2} alt=""/></div>
         <h1 className="header">Reynardt Deminey</h1>
-        <div className="sub-heading">Midstream Estate · Gauteng · South Africa · <a href="mailto:demineydev@outlook.com">demineydev@outlook.com</a></div>
+        <div className="sub-heading">Midstream Estate · Gauteng · South Africa · <a href="mailto:info@reynardtdeminey.me">info@reynardtdeminey.me</a></div>
         <br/>
         <div className="blurb">
           <p>
